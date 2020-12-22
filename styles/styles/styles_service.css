@@ -1,0 +1,460 @@
+@charset='utf-8'
+@font-face{
+	font-family: 'Segoe Script';
+	font-weight: 700;
+	src:url(../../fonts/polices/sgoe_script_bold.ttf);
+}
+
+@font-face{
+	font-family:'Source Sans Variable';
+	font-weight: 400;
+	src:url(../../fonts/polices/source_sans_variable.ttf);
+}
+
+@font-face{
+	font-family:'MV Boli';
+	font-weight: 400;
+	src:url(../../fonts/polices/mv_boli.ttf);
+}
+@font-face{
+	font-family: 'Segoe Print';
+	src:url(../../fonts/polices/segoe_print.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family: 'Segoe Print';
+	src:url(../../fonts/polices/segoe_print_bold.ttf);
+	font-weight: 700;
+}
+*{
+	list-style: none;
+	text-decoration: none;
+}
+
+.container-fluid,header{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #DFDFDF;
+	font-family: 'MV Boli';
+}
+
+
+/*Header+nav*/
+.row{
+	display: flex;
+	justify-content: space-between;
+}
+.header_cont{
+	background: #d81010;
+}
+header{
+	background:url(../../images/armoiries_bf_ico.png) no-repeat top right;
+	
+}
+
+.nav{
+	margin-right: 0;
+}
+.logo{
+	padding: 0;
+
+}
+nav ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	background: url(../../images/header_bg.png) no-repeat center right;
+}
+nav a{
+	font-size: 1.85vw;
+    font-family: 'Segoe Script';
+    color: white;
+}
+nav a:hover{
+	text-decoration: none;
+}
+/*end header + nav*/
+/*Contenu principal*/
+.main_section > section,.btn-primary,.banner,.search_bar input,.first img{
+	border:2px solid #d81010;
+}
+.main_section > section{
+	margin-top: 50px;
+	box-shadow: 5px 5px 20px black;
+}
+/*search bar*/
+h2{
+	font-family: 'Source Sans Variable';
+	color: #d81010;
+}
+h2:after{
+	content: '';
+	background: #d81010;
+	width: 800px;
+	height: 2px;
+	margin-left: 9px;
+	display: inline-block;
+}
+.search_bar{
+	border-radius: 20px;
+	width: 30%;
+	margin: 30px;
+
+
+}
+.search_bar input:focus{
+	outline:none;
+}
+.search_bar input{
+	width: 110%;
+	line-height: 25px;
+	border-radius: 20px;
+	padding-left: 10px;
+}
+.search_bar input::placeholder{
+	color:  #d81010;
+	font-style: italic;
+	opacity: 0.5;
+}
+.search_bar a{
+	color:  #d81010;
+}
+.fa-search{
+	position: relative;
+	top: 5px;
+	opacity: 0.5;
+	height: 30px;
+}
+/*end search bar */
+/* banniere*/
+.main_section .banner{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 500px;
+	background: url(../../images/back_04.webp);
+	background-size: 100% 100%;
+	box-shadow: none;
+}
+.banner h1{
+	text-transform: uppercase;
+	text-shadow: 1px 1px 15px black;
+	color: #d81010;
+	font-size: 35px;
+	text-align: center;
+	align-self: center;
+}
+/* end banniere*/
+
+
+/* Fabrique*/
+.first h2:after{
+	width: 650px;
+}
+.first img{
+	width: 35%;
+	height: auto;
+	float: left;
+	margin:20px;
+	shape-outside: polygon();
+}
+.first p{
+	text-align: justify;
+}
+/* end Fabrique*/
+
+
+/*Formations*/
+.carousel-item > div{
+	padding: 50px;
+	margin: auto;
+	width: 90%;
+	justify-content: space-between;
+	display: flex;
+}
+.carousel-control-next-icon{
+}
+.card{
+	border-radius: 20px;
+	margin: 10px 0 10px 0;
+	width: 23%;
+	border: 1px solid #d81010;
+}
+.card-img-top{
+	margin-bottom: 7px;
+	text-align: center;
+	height:40px;
+}
+.card-body{
+	border-top: 3px solid #d81010;
+}
+/*end Formations*/
+
+
+/*T4S*/
+.T4S{
+	position: relative;
+}
+.T4S > p{
+	margin-left: 10%;
+	width: 35%;
+}
+.T4S_form{
+	margin: auto;
+}
+.t4s_formation{
+	margin-top: 20px;
+	background: #d81010;
+	color: white;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+.t4s_formation > div{
+	margin-right: 10px;
+	background: url(../../images/startT5S.jpg);
+	background-size: 100% 100%;
+	width: 200%;
+	height: 90%
+}
+.t4s_formation:nth-of-type(3){
+	margin-bottom: 50px;
+}
+.btn-primary{
+	background: transparent;
+	color: #d81010;
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+}
+/*end T4S*/
+
+
+/** footer + copyrifgt--*/
+footer{
+	margin-top: 50px;
+	color: white;
+	background: #d81010;
+}
+.inner_footer{
+	font-family: 'Segoe Print';
+	margin: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+.inner_footer ul li{
+	margin-left: 30px;
+	margin-top: 15px;
+}
+.inner_footer ul li:nth-of-type(1){
+	margin-top: 0px;
+}
+.inner_footer ul:nth-of-type(3) a{
+	background: #d81010;
+	color: white;
+	font-size: 2vw;
+}
+.copyright{
+	font-family: 'Segoe Print';
+	background: #690213;
+	display: flex;
+	justify-content: center;
+	color: #a9757d;
+}
+.copyright p:last-of-type{
+	margin-left: 20px;
+
+}
+/** end footer + copyrifgt--*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1500px){
+	.header_cont,.main_cont{
+		display: flex;
+		justify-content: center;
+	}
+	.main_cont{
+		align-items: center;
+		flex-direction: column;
+	}
+	.footer{
+		width: 100vw;
+	}
+	#header,.main_section,.inner_footer,.copyright{
+		margin: auto;
+		width: 1500px;
+	}
+	nav ul li a{
+	 font-size: 32px; 
+	}
+	.T4S h2:after{
+		width: 890px;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+	.T4S h2:after{
+		width: 920px;
+	}
+	.formation h2:after{
+		width: 860px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	.first h2:after{
+		width: 450px;
+	}
+	.formation h2:after{
+		width: 650px;
+	}
+	.T4S h2:after{
+		width: 750px;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px){
+	.first h2:after{
+		width: 220px;
+	}
+	.formation h2:after{
+		width: 400px;
+	}
+	.T4S h2:after{
+		width: 500px;
+	}
+	.banner h1{
+		font-size: 3vw;
+	}
+	.t4s_formation p{
+		overflow;height: 
+		height: 85%;
+		font-size: 1.2vw;
+	}
+	.t4s_formation > div{
+	width: 600%;
+	}
+	.T4S > p{
+		margin: auto;
+		width: 60%
+	}
+
+}
+@media (min-width: 576px) and (max-width: 768px){
+	nav ul{
+		background-image: none;
+	}
+	header{
+		background:url(../../images/armoiries_bf_ico.png) no-repeat top right,url(../../images/header_bg.png) no-repeat 350px -20px;
+	}
+	.search_bar input{
+	width: 120%;
+	}
+		.first h2:after{
+		width: 50px;
+	}
+	.formation h2:after{
+		width: 220px;
+	}
+	.T4S h2:after{
+		width: 320px;
+	}
+	.T4S > p{
+		margin: auto;
+		width: 60%
+	}
+	.carousel-item > div{
+		display: flex;
+		flex-direction: column;
+	justify-content: center;
+	}
+	.carousel-item .row .card{
+			align-self: stretch;
+			width: 100%;
+	}
+	.banner h1{
+		font-size: 3vw;
+	}
+	.t4s_formation p{
+		overflow;height: 
+		height: 85%;
+		font-size: 1.9vw;
+	}
+	.t4s_formation > div{
+	width:400%;
+	}
+}
+
+@media (max-width: 576px){
+	header,nav ul{
+		background-image: none;
+	}
+	.logo{
+		background:url(../../images/armoiries_bf_ico.png) no-repeat top right,url(../../images/header_bg.png) no-repeat right bottom;
+	}
+	.logo img{
+		width: 60%;
+	}
+	nav ul li a{
+	font-size: 3vw;
+	}
+	.search_bar input{
+	width: 150%;
+	}
+	.search_bar input::placeholder{
+	font-size: 2.5vw;
+	}
+	.inner_footer{
+		flex-direction: row;
+		margin: 5px;
+		padding: 0;
+		font-size: 2vw;
+	}
+	.inner_footer ul{
+		width: 220px;
+		margin-top: 20px;
+	}
+	h2:after{
+		display: none;
+	}
+	.T4S > p{
+		margin: auto;
+		width: 60%
+	}
+	.t4s_formation > div{
+	width:500%;
+	}
+	.carousel-item > div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;	
+	}
+	.carousel-item .row .card{
+		align-self: stretch;
+		width: 100%;
+	}
+	.t4s_formation p{
+		overflow;height: 
+		height: 85%;
+		font-size: 2.3vw;
+	}
+	.inner_footer ul:nth-of-type(3) a{
+	font-size: 5vw;
+	}
+
+}
